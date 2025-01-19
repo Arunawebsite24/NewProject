@@ -1,0 +1,488 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World War II Timeline</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #000;
+            color: #fff;
+        }
+
+        .nav-bar {
+            background-color: #333;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+        }
+
+        .nav-bar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+        .nav-bar a:hover {
+            background-color: #575757;
+        }
+
+        #timeline {
+            background: url('worldmap.jpg') no-repeat center center fixed;
+            background-size: cover;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: yellow;
+            -webkit-text-stroke: 2px red;
+        }
+
+        .timeline {
+            position: relative;
+            margin: 50px auto;
+            width: 80%;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .vertical-line {
+            position: absolute;
+            width: 4px;
+            background: #fff;
+            height: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .event {
+            position: relative;
+            margin: 20px 0;
+        }
+
+        .event.left {
+            text-align: right;
+            padding-right: 55%;
+        }
+
+        .event.right {
+            text-align: left;
+            padding-left: 55%;
+        }
+
+        .event .date {
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .event-details {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            background: #333;
+            text-align: left;
+        }
+
+        .horizontal-line {
+            width: 30px;
+            height: 2px;
+            background: #fff;
+            position: absolute;
+            top: 50%;
+        }
+
+        .event.left .horizontal-line {
+            right: 50%;
+        }
+
+        .event.right .horizontal-line {
+            left: 50%;
+        }
+    .auto-style1 {
+		background-color: #008080;
+	}
+    span.MsoHyperlink
+	{color:#467886;
+	text-decoration:underline;
+	text-underline:single;
+	}
+    .auto-style2 {
+		text-align: center;
+	}
+    .auto-style3 {
+		font-weight: normal;
+	}
+    .auto-style4 {
+	text-align: center;
+	font-size: x-large;
+}
+.auto-style5 {
+	font-size: x-large;
+}
+.auto-style6 {
+	color: yellow;
+}
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <a href="#timeline" class="auto-style6">WW2-Timeline</a>
+        <a href="#gallery" class="auto-style6">Gallery</a>
+        <a href="#resources" class="auto-style6">Resources</a>
+        <a href="#contact" class="auto-style6">Contact</a>
+    </div>
+
+    <div id="timeline" class="section">
+        <h1 class="auto-style1">World War II Timeline</h1>
+        <div class="timeline">
+            <div class="vertical-line"></div>
+
+            <div class="event left">
+                <div class="horizontal-line"></div>
+                <p class="date" onclick="toggleDetails('details1931')">1931</p>
+                <div id="details1931" class="event-details">
+                    <b><u>The Mukden Incident</u></b><br>
+                    <p class="MsoNormal">The Mukden Incident was an explosion on 
+					September 18, 1931, when Japanese troops occupied the city 
+					of Mukden (now Shenyang, China), beginning Japan's invasion 
+					of Manchuria. It was probably staged by the Japanese 
+					Kwantung Army, independent of the government, to provide a 
+					pretext for occupation. Japan saw Manchuria as essential to 
+					the security of its colony in Korea and took the step with 
+					apprehension about the unification of China under Chiang 
+					Kai-shek and Soviet influence in the area.<o:p></o:p></p>
+					<p class="MsoNormal">A small explosion of the Japanese-owned 
+					South Manchurian Railway, blamed on Chinese forces, provided 
+					the pretext. Although damage was limited, Japanese troops 
+					attacked the nearby Chinese garrison with artillery. 
+					Offering little resistance because of Chiang Kai-shek's 
+					policy of nonresistance, Japan was able to occupy all of 
+					Manchuria within three months.<o:p></o:p></p>
+					<p class="MsoNormal">The League of Nations, through the 
+					Lytton Commission, condemned Japan as the aggressor. In 
+					response, Japan withdrew from the League and established the 
+					puppet state of Manchukuo, which was not recognized by any 
+					country. The Japanese government, unable to control the 
+					Kwantung Army, saw its Prime Minister resign in December. 
+					The subsequent government, swayed by public opinion, 
+					endorsed the invasion, cementing Japan's control over 
+					Manchuria until 1945.<o:p></o:p></p>
+					<p class="MsoNormal">Resource:
+					<a href="https://www.britannica.com/event/Mukden-Incident">
+					https://www.britannica.com/event/Mukden-Incident</a><o:p></o:p></p>
+				</div>
+            </div>
+
+            <div class="event right">
+                <div class="horizontal-line"></div>
+                <p class="date" onclick="toggleDetails('details1933')">30 Jan 1933</p>
+                <div id="details1933" class="event-details">
+                    <b><u>Adolf Hitler becomes Chancellor of Germany</u></b><br>
+                    <p class="MsoNormal">On January 30, 1933, Adolf Hitler was 
+					appointed Chancellor of Germany by President Paul von 
+					Hindenburg. The wide discontent with the economic 
+					instability of Germany and the Treaty of Versailles drove 
+					his rise to power. In the elections of July 1932, the Nazi 
+					Party became the largest in the Reichstag, winning 230 
+					seats. However, initially, Hindenburg was unwilling to 
+					appoint Hitler because of his radicalism and the violence of 
+					the SA (Brownshirts).<o:p></o:p></p>
+					<p class="MsoNormal">After the chancellorship of General 
+					Kurt von Schleicher, conservative elites led by Franz von 
+					Papen persuaded Hindenburg to appoint Hitler, assuming they 
+					could still control him as long as the influence of Nazis in 
+					the cabinet was reduced.<o:p></o:p></p>
+					<p class="MsoNormal">Hitler consolidated power immediately 
+					upon entering office and established a police state with the 
+					Gestapo. He also killed all opposition and began Nazi 
+					totalitarian rule, laying the foundation for World War II.<o:p></o:p></p>
+					<p class="MsoNormal">Resource:
+					<a href="https://www.history.com/this-day-in-history/adolf-hitler-is-named-chancellor-of-germany">
+					https://www.history.com/this-day-in-history/adolf-hitler-is-named-chancellor-of-germany</a><o:p></o:p></p>
+				</div>
+            </div>
+
+            <div class="event left">
+                <div class="horizontal-line"></div>
+                <p class="date" onclick="toggleDetails('details1938')">1938</p>
+                <div id="details1938" class="event-details">
+                    <b><u>Annexation of Austria</u></b><br>
+                    <p class="MsoNormal">In 1938, Austria and Germany were 
+					united politically under the annexation by Adolf Hitler, 
+					known as the Anschluss. The unification of both countries 
+					had been a notion since 1919, but after Hitler came to 
+					power, the idea became less attractive. A Nazi coup in 1934 
+					failed, leaving Austria in the hands of a right-wing 
+					authoritarian regime, which later put up little resistance 
+					to Hitler's actions.<o:p></o:p></p>
+					<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+					<p class="MsoNormal">In February 1938, Hitler forced 
+					Austrian Chancellor Kurt von Schuschnigg to turn power over 
+					to Austrian Nazis. Schuschnigg called a plebiscite on the 
+					Anschluss but, under Hitler's pressure, canceled it and 
+					resigned, ordering the Austrian Army not to resist. German 
+					troops entered Austria on March 12, 1938, and the next day, 
+					Hitler annexed the country. A controlled plebiscite was held 
+					on April 10, in which an overwhelming approval for Austria 
+					joining Nazi Germany was registered.<o:p></o:p></p>
+					<p class="MsoNormal">Resource:
+					<a href="https://www.britannica.com/event/Anschluss">
+					https://www.britannica.com/event/Anschluss</a><o:p></o:p></p>
+					<br>                </div>
+            </div>
+
+            <div class="event right">
+                <div class="horizontal-line"></div>
+                <p class="date" onclick="toggleDetails('details1939')">1 Sept 1939</p>
+                <div id="details1939" class="event-details">
+                    <b><u>Start of World War II</u></b><br>
+                    <p class="MsoNormal">Beginning on September 1, 1939, the 
+					invasion of Poland by Nazi Germany initiated World War II. 
+					Until its conclusion on October 5, 1939, the campaign was 
+					marked with the strategies of "blitzkrieg," as German forces 
+					moved quickly from multiple points of attack. The army of 
+					Poland, at a strategic disadvantage in both manpower and 
+					geography, was readily overcome. In the first days of 
+					combat, the Luftwaffe decimated the Polish air force, paving 
+					the way for rapid and mobile panzer divisions to subdue 
+					ground forces.<br><br>Although both Britain and France 
+					declared war on Germany on September 3, neither took any 
+					effective action. A Polish counterattack in the Battle of 
+					Bzura (September 9-15) enjoyed brief success but could not 
+					stem the tide. On September 17, the Soviet Union invaded 
+					Poland from the east, as provided for under the Nazi-Soviet 
+					Pact, and Poland was defeated. Warsaw fell on September 27, 
+					and the country was divided between Germany and the Soviet 
+					Union.<br><br>The losses were as follows: 14,000 Germans 
+					dead or missing, 30,000 wounded, while Polish losses were 
+					about 66,000 dead, 130,000 wounded, and 400,000 captured. 
+					Despite this crushing defeat, Polish resistance led to the 
+					establishment of a strong underground movement and a Polish 
+					army in exile, which made vital contributions to the Allied 
+					war effort in key battles.<o:p></o:p></p>
+				</div>
+            </div>
+
+            <div class="event left">
+                <div class="horizontal-line"></div>
+                <p class="date" onclick="toggleDetails('details1941')">Dec 1941</p>
+                <div id="details1941" class="event-details">
+                    <b><u>Attack on Pearl Harbor</u></b><br>
+                    <p class="MsoNormal">The attack on Pearl Harbor on December 
+					7, 1941, was a surprise Japanese assault on the U.S. naval 
+					base in Hawaii, prompting the U.S. to enter World War II. 
+					Tensions had escalated due to Japan’s expansion in Asia and 
+					U.S. embargoes on vital resources like oil.<o:p></o:p></p>
+					<p class="MsoNormal">Planned by Admiral Isoroku Yamamoto, 
+					the attack began on the morning of December 7, with nearly 
+					200 aircraft launched in two waves. The first wave destroyed 
+					over 180 U.S. aircraft and heavily damaged battleships, 
+					including the USS Arizona and USS Oklahoma. The second wave 
+					caused additional damage before the Japanese forces withdrew 
+					by 9:00 am.<o:p></o:p></p>
+					<p class="MsoNormal">The attack resulted in over 3,400 
+					American casualties, including more than 2,300 deaths. 
+					However, U.S. aircraft carriers were not in port and 
+					remained intact, later proving critical in the war. The 
+					attack marked a turning point, leading to the U.S. declaring 
+					war on Japan.<o:p></o:p></p>
+					<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+					<p class="MsoNormal">Resource:
+					<a href="https://www.britannica.com/event/Pearl-Harbor-attack">
+					https://www.britannica.com/event/Pearl-Harbor-attack</a><o:p></o:p></p>
+				</div>
+            </div>
+
+            <div class="event right">
+                <div class="horizontal-line"></div>
+                <p class="date" onclick="toggleDetails('details1940')">April 1940</p>
+                <div id="details1940" class="event-details">
+                    <b><u>Germany Invades Norway</u></b><br>
+                    <p class="MsoNormal">In May 1940, there were 800,000 French 
+					troops positioned behind the Maginot Line, while other 
+					positions, considered weaker-like the Ardennes Forest-were 
+					merely lightly guarded. Germany launched a diversionary 
+					attack against the Maginot Line while their main assault 
+					came through the allegedly tank-impassable Ardennes.<o:p></o:p></p>
+					<p class="MsoNormal">On May 10, the German army invaded the 
+					Netherlands and Belgium; by May 12, a second powerful force 
+					had broken through at Sedan and reached open ground by May 
+					15, then to the coast by May 20, cutting the Allies from 
+					behind and threatening their key ports such as Dunkirk.<o:p></o:p></p>
+					<p class="MsoNormal">The lightning advance of Germany, made 
+					possible by better tactics and coordination of armored 
+					divisions along with air power, had the Allies in disarray. 
+					By May 22, the British Expeditionary Force was threatened 
+					with encirclement, which made the French consider evacuation 
+					and retreat.<o:p></o:p></p>
+					<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+					<p class="MsoNormal">Resource:
+					<a href="https://www.britannica.com/event/World-War-II/The-invasion-of-the-Low-Countries-and-France">
+					https://www.britannica.com/event/World-War-II/The-invasion-of-the-Low-Countries-and-France</a><o:p></o:p></p>
+                </div>
+            </div>
+
+            <div class="event left">
+                <div class="horizontal-line"></div>
+                <p class="date" onclick="toggleDetails('details1945')">May 8, 1945</p>
+                <div id="details1945" class="event-details">
+                    <b><u>Victory in Europe Day</u></b><br>
+                    <p class="MsoNormal">V-E Day, May 8, 1945, was the official 
+					end of World War II in Europe. On that day, German armed 
+					forces formally and unconditionally surrendered to the 
+					Allies. Conceding to the Allies on this day, German troops 
+					surrendered their arms in cities from Prague to Copenhagen 
+					and Berlin, where the final battles were crucial, with 
+					significant fighting by the Soviet Union. Fighting in Prague 
+					was extremely costly, and upwards of 1 million German 
+					soldiers retreated west to avoid being captured by the 
+					Soviets; the Soviets took approximately 2 million German 
+					prisoners.<o:p></o:p></p>
+					<p class="MsoNormal">Although the formal surrender was 
+					recognized on May 8, fighting continued in some areas. In 
+					Moscow, May 9 became the official V-E Day, with Joseph 
+					Stalin declaring victory for the Soviet Union. The day was 
+					widely celebrated across Allied nations, including the U.S., 
+					U.K., and Soviet Union.<o:p></o:p></p>
+				</div>
+            </div>
+
+            <div class="event right">
+                <div class="horizontal-line"></div>
+                <p class="date" onclick="toggleDetails('details1945b')">Sept 2, 1945</p>
+                <div id="details1945b" class="event-details">
+                    <b><u>End of World War II<br><br>
+					<p class="MsoNormal">On September 2, 1945, Japan formally 
+					surrendered to the Allies aboard the USS Missouri in Tokyo 
+					Bay, ending World War II. By mid-1945, Japan faced 
+					inevitable defeat due to the destruction of its military, 
+					Allied bombings, and the capture of Okinawa. A planned 
+					invasion of Japan was expected to cause heavy Allied 
+					casualties.<o:p></o:p></p>
+					<p class="MsoNormal">After successfully testing the atomic 
+					bomb, the U.S. issued the Potsdam Declaration demanding 
+					Japan’s unconditional surrender, which Japan initially 
+					rejected. On August 6 and 9, atomic bombs were dropped on 
+					Hiroshima and Nagasaki, and the Soviet Union declared war on 
+					Japan, attacking Manchuria. Facing these events, Emperor 
+					Hirohito agreed to surrender, provided his sovereignty was 
+					preserved. Following clarification from the Allies, Japan 
+					announced its surrender on August 15, with the formal 
+					ceremony held on September 2.<o:p></o:p></p>
+					<p class="MsoNormal">Resource:
+					<a href="https://www.history.com/this-day-in-history/japan-surrenders">
+					https://www.history.com/this-day-in-history/japan-surrenders</a><o:p></o:p></p>
+					<br><br></u></b>&nbsp;</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="gallery" class="section">
+        <h1>Gallery</h1>
+        <table style="width: 400px; height: 400px">
+			<tr>
+				<td style="width: 400px; height: 400px">
+				<img alt="1931" height="300" src="1931.jpg.jpg" width="400">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<h3 class="auto-style2"><strong>1931</strong></h3>
+				</td>
+				<td style="width: 400px; height: 400px">
+				<img alt="1938-Event" height="300" src="1938.jpg.jpg" width="400"><h3 class="auto-style2">1938</h3>
+				</td>
+				<td style="width: 400px; height: 400px">
+				<img alt="1939-Event" height="300" src="March%201939.jpg" width="400"><h3 class="auto-style2">1939</h3>
+				</td>
+			</tr>
+			<tr>
+				<td style="width: 400px; height: 400px">
+				<img alt="1939-2" height="300" src="March%201939-2.jpg" width="400">&nbsp;<h3 class="auto-style2">1939</h3>
+				</td>
+				<td style="width: 400px; height: 400px" class="auto-style2">
+				<img alt="Image" height="300" src="Sep%201939-2.jpg" width="400">&nbsp;<h3>1939</h3>
+				</td>
+				<td style="width: 400px; height: 400px" class="auto-style2">
+				<img alt="1941" height="300" src="Dec%201941.jpg" width="400">&nbsp;<h3>1941</h3>
+				</td>
+			</tr>
+			<tr>
+				<td style="width: 400px; height: 300px" class="auto-style2">
+				<img alt="Image 1941" height="300" src="Dec%201941-2.jpg" width="400">&nbsp;<h3 class="auto-style3">
+				<strong>1941</strong></h3>
+				</td>
+				<td style="width: 400px; height: 300px">&nbsp;<img alt="1945" height="350" src="Sep%201945.jpg" width="400"><h3 class="auto-style2">1945</h3>
+				</td>
+				<td style="width: 400px; height: 300px" class="auto-style2">
+				<img alt="May 1945" height="300" src="May%201945.jpg" width="400">&nbsp;<h3>1945</h3>
+				</td>
+			</tr>
+			<tr>
+				<td style="height: 300px" class="auto-style4" colspan="3">
+				<a href="WW2-%20Timeline_Dec_14th.html">Home Page </a></td>
+			</tr>
+		</table>
+    </div>
+
+    <div id="resources" class="section">
+        <h1>Resources</h1>
+        <p class="MsoNormal">
+		<a href="https://www.britannica.com/event/Mukden-Incident">
+		https://www.britannica.com/event/Mukden-Incident</a><o:p></o:p></p>
+		<p class="MsoNormal">
+		<a href="https://www.history.com/this-day-in-history/adolf-hitler-is-named-chancellor-of-germany">https://www.history.com/this-day-in-history/adolf-hitler-is-named-chancellor-of-germany</a><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		</span><o:p></o:p></p>
+		<p class="MsoNormal">
+		<a href="https://www.britannica.com/event/Anschluss">
+		https://www.britannica.com/event/Anschluss</a><o:p></o:p></p>
+		<p class="MsoNormal">
+		<a href="https://www.britannica.com/event/Invasion-of-Poland">
+		https://www.britannica.com/event/Invasion-of-Poland</a><o:p></o:p></p>
+		<p class="MsoNormal">
+		<a href="https://www.britannica.com/event/World-War-II/The-invasion-of-the-Low-Countries-and-France">
+		https://www.britannica.com/event/World-War-II/The-invasion-of-the-Low-Countries-and-France</a><span class="MsoHyperlink"><o:p></o:p></span></p>
+		<p class="MsoNormal">
+		<a href="https://www.history.com/this-day-in-history/nazis-take-czechoslovakia">
+		https://www.history.com/this-day-in-history/nazis-take-czechoslovakia</a><o:p></o:p></p>
+		<p class="MsoNormal">
+		<a href="https://www.britannica.com/event/Pearl-Harbor-attack">https://www.britannica.com/event/Pearl-Harbor-attack</a><o:p></o:p></p>
+		<p class="MsoNormal">
+		<a href="https://www.history.com/this-day-in-history/japan-surrenders">
+		https://www.history.com/this-day-in-history/japan-surrenders</a><o:p></o:p></p>
+		<p class="MsoNormal">
+		<o:p></o:p>
+		</p>
+		<p class="auto-style5">
+		<o:p><a href="WW2-%20Timeline_Dec_14th.html">Home Page </a></o:p></p>
+        <p>&nbsp;</p>
+    </div>
+
+    <div id="contact" class="section">
+        <h1>&nbsp;</h1>
+		<h1>&nbsp;</h1>
+		<h1>&nbsp;</h1>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<h1>&nbsp;</h1>
+		<h1>&nbsp;</h1>
+		<h1>Contact</h1>
+        <p>ABDULAZIZ AL FUHAID,&nbsp; GRADE 10&nbsp;&nbsp; Email:
+		<a href="mailto:1td175@qas.qfschools.qa">1td175@qas.qfschools.qa</a></p>
+		<p><a href="WW2-%20Timeline_Dec_14th.html">Home Page</a> </p>
+		<p>&nbsp;</p>
+    </div>
+
+    <script>
+        function toggleDetails(id) {
+            const details = document.getElementById(id);
+            details.style.display = (details.style.display === "none" || !details.style.display) ? "block" : "none";
+        }
+    </script>
+</body>
+</html>
